@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "ServiceNow Toolkit",
+  "version": "1.0.0",
+  "description": "Power tools for ServiceNow platform development",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "ServiceNow Toolkit"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "contextMenus",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "run-bookmarklet-1": {
+      "suggested_key": { "default": "Alt+1" },
+      "description": "Copy sys_id"
+    },
+    "run-bookmarklet-2": {
+      "suggested_key": { "default": "Alt+2" },
+      "description": "Show Fields"
+    },
+    "run-bookmarklet-3": {
+      "suggested_key": { "default": "Alt+3" },
+      "description": "Toggle Debug"
+    },
+    "_execute_action": {
+      "suggested_key": { "default": "Alt+S" },
+      "description": "Open Toolkit"
+    }
+  }
+}
